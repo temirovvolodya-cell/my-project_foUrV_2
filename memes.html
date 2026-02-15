@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые мемы</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            background-size: cover;
+            min-height: 100vh;
+            background-color: #f0e8f5;
+            padding: 40px 20px;
+        }
+
+        .in-one-line {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .center {
+            padding-left: calc(50% - 500px);  
+            padding-right: calc(50% - 500px);
+        }
+
+        
+        nav {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            border-bottom: 4px solid #9b59b6;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+       
+        .memes-info {
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 30px 0;
+            max-width: 600px;
+        }
+
+        .memes-info ol {
+            padding-left: 25px;
+        }
+
+        .memes-info li {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #2d3436;
+            margin-bottom: 5px;
+        }
+
+        .meme-gallery {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .meme-gallery img {
+            width: 350px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .meme-gallery img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="content center">
+        
+        <nav>
+            <ul class="in-one-line">
+                <li><a href="index.html">🏠 Главная</a></li>
+                <li><a href="facts.html">📌 Крутые факты</a></li>
+                <li><a href="memes.html">😂 Мои любимые мемы</a></li>
+                <li><a href="quotes.html">💭 Мои любимые цитаты</a></li>
+            </ul>
+        </nav>
+
+        <h1>Мои любимые мемы</h1>
+        
+        <div class="meme-gallery in-one-line">
+            <img src="./images/meme2.jpeg" alt="ЧеВо">
+            <img src="./images/meme1.jpeg" alt="CHill">
+            <img src="./images/meme3.png" alt="Black-OUT">
+            <img src="./images/meme4.jpeg" alt="Eж гуманитарий">
+        </div>
+    </div>
+</body>
+</html>
